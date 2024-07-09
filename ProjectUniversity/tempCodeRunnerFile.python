@@ -1,0 +1,8 @@
+import matplotlib.pyplot as plt
+x = [1, 2, 3]
+y = [0.172,0.458,0.313]
+plt.plot(x, y)
+plt.xlabel('casenoin ques')
+plt.ylabel('taketime in second')
+plt.title('The required graph!')
+plt.show()

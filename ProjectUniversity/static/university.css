@@ -1,0 +1,120 @@
+body {
+    font-family: sans-serif;
+}
+
+.he {
+    text-align: center;
+    justify-content: center;
+}
+
+.pe {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+p {
+    font-size: 30px;
+}
+
+.ce {
+    font-size: 30px;
+}
+
+.cc {
+    font-size: 25;
+    color: white
+}
+
+h {
+    font-size: 50;
+
+}
+
+.pe {
+    font-size: 40px;
+}
+
+.roshan1 {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    margin: 0;
+}
+
+
+
+
+
+
+.hp {
+    height: 125px;
+    background-color: rgb(2, 2, 2);
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    color: white;
+}
+
+.up {
+    justify-content: space-evenly;
+}
+
+.ps {
+    height: 303px
+}
+
+.gg {
+    justify-content: space-evenly;
+    display: flex;
+    margin-top: 420px;
+
+}
+
+.back {
+
+    background: filter: brightness(-800%);
+}
+
+.aa {
+    justify-content: space-evenly;
+}
+
+.zz {
+    text-align: center;
+}
+
+.qq {
+    text-align: center;
+    font-size: 20;
+}
+
+.up {
+    justify-content: space-evenly;
+    display: flex;
+
+}
+
+.ff {
+    font-size: 5;
+}
+
+.op {
+    text-align: left;
+}
+button {
+    background-color: royalblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: darkblue;
+}

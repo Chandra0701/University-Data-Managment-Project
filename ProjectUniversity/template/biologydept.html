@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Biology</title>
+    <link rel="stylesheet" href="/static/dept.css">
+   <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        section {
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin: 20px;
+        }
+        h2 {
+            color: #3498db;
+            font-size: 24px;
+        }
+        ul {
+            list-style-type: disc;
+        }
+        address {
+            font-style: normal;
+        }
+        footer {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 24px;
+            }
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Department of Biology</h1>
+        <nav>
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="https://biology.stanford.edu/">About Us</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#faculty">Faculty</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="/course/4">Courses</a></li>
+                <li><a href="/student/4">Students</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img src="https://ncc.edu/programsandcourses/academic_departments/biology/images/BiologyHeroV2.jpg" alt="Biology Image">
+
+    <section id="programs">
+        <h2>Our Programs</h2>
+        <ul>
+            <li>Bachelor's Degree in Biology</li>
+            <li>Master's Degree in Life Sciences</li>
+            <li>Ph.D. in Biological Research</li>
+        </ul>
+    </section>
+
+    <section id="faculty">
+        <h2>Our faculty </h2>
+        <table>
+            <tr>
+                <th>Faculty ID</th>
+                <th>Faculty Name</th>
+                <th>Email</th>
+            </tr>
+           {%for s in w%}
+            <tr>
+                {%for k in s%}
+                <td>{{k}}</td>
+                {%endfor%}
+            </tr>
+            {%endfor%}
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <address>
+            Department of Biology<br>
+            University Address, City, State, ZIP<br>
+            Email: [Email Address]<br>
+            Phone: [Phone Number]
+        </address>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Department of Biology</p>
+    </footer>
+
+    <script src="/static/dept.js"></script>
+</body>
+</html>

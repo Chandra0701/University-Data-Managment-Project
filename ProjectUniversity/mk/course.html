@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width,initial-scale=1.0 ">
+    <title>university website</title>
+    <link rel="stylesheet" href="ps.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/fontawesome.min.js"
+        integrity="sha512-64O4TSvYybbO2u06YzKDmZfLj/Tcr9+oorWhxzE3yDnmBRf7wvDgQweCzUf5pm2xYTgHMMyk5tW8kWU92JENng=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+
+
+    <section class="sub-header">
+
+
+        <nav>
+
+            <a href="sp.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="sp.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">course</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                </ul>
+
+
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+    <!---course content-->
+    <section class="course">
+        <h1>Course We Offer</h1>
+        <p>lorem ipsum dolor sit amet,consecteture adipiscing elit.</p>
+        <div class="row">
+
+            <div class="row">
+                <div class="course-col">
+                    <h3>Degree</h3>
+                    <p>a course of studies leading toward a degree : an academic subject accepted in partial fulfillment
+                        of the requirements for a degree.
+                    </p>
+                </div>
+                <div class="course-col">
+                    <h3>Post Gradution</h3>
+                    <p>a course of studies leading toward a degree : an academic subject accepted in partial fulfillment
+                        of the requirements for a degree.
+                    </p>
+                </div>
+                <div class="course-col">
+                    <h3>Post Gradution</h3>
+                    <p>Postgraduate education can involve studying for qualifications such as postgraduate certificates
+                        and postgraduate diplomas. They are sometimes used as steps on the route to a degree, as part of
+                        the training for a specific career, or as a qualification in an area of study too narrow to
+                        warrant a full degree course.
+                    </p>
+                </div>
+    </section>
+    <!---facilities-->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>
+            Welcome to
+            our university
+
+            PROMISE A BRIGHT FUTURE
+
+            PrevNext
+
+            College & Campus Facilities
+            FACILITIES
+
+            The college is situated in the heart of the city. Apart from being the Garden City, Bangalore is now the
+            natural choice and preferred destination for students from different parts of the country to pursue
+            professional education, be it in Engineering, Medicine or any other field. The city is home to globally
+            renowned corporate houses in the IT sector. The distance to the college from the city railway station and
+            Bangalore airport is 7 kms & 15 kms respectively.</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.png">
+                <h3>World Class Library</h3>
+                <p>A library is a place where books and sources of information are stored. They make it easier for
+                    people to get access to them for various purposes. Libraries are very helpful and economical too.
+                    They include books, magazines, newspapers, DVDs, manuscripts and more. In other words, they are an
+                    all-encompassing source of information.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/basketball.png">
+                <h3>Largest Playground</h3>
+                <p>A playground is a place where students can play. Typically, they have playthings for kids to use,
+                    like
+                    slides, swings, and seesaws. A playground can improve your pavement surface and make your kids enjoy
+                    the playground more. Usually, they are outside, but occasionally, they are inside a building.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/cafeteria.png">
+                <h3>Tasty And Healthy Food</h3>
+                <p>When we intake healthy fruits and vegetables that are full of nutrients, we reduce the chances of
+                    diseases. For instance, green vegetables help us to maintain strength and vigor. In addition,
+                    certain healthy food items keep away long-term illnesses like diabetes and blood pressure.</p>
+            </div>
+        </div>
+
+    </section>
+    <!----footer-->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>
+            University is full of opportunities, but sometimes it can be hard to know which way to look first <br> or at
+            least know where you’re headed especially when your peers<br> seem to know what they’re doing.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twiter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o">Easy Tutorials</i></p>
+
+    </section>
+    <!------javascript ---->
+    <script>
+        var navLinks = documents.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right - "0";
+        }
+        function hideMenu() {
+            navLinks.style.right - "-200";
+        }
+    </script>
+
+</body>
+
+</html>

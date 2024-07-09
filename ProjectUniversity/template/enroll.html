@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>University Course Registration</title>
+    <style>
+        body {
+            background: url('https://i.pinimg.com/originals/64/aa/0f/64aa0f7948f6f0fdea44af9b4b761e37.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+            color: royalblue;
+        }
+        button {
+            background-color: royalblue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin: 10px 0;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkblue;
+        }
+        #profile {
+            padding: 20px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Course Registration</h2>
+        <form method="post">
+            {%csrf_token%}
+            <div class="form-group">
+                <label for="studentID">Student ID:</label>
+                <input type="text" id="studentID" name="ID" required>
+            </div>
+            <div class="form-group">
+                <label for="courseSelection">Select Courses:</label>
+                <input type="int" id="cid" name="cid">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
