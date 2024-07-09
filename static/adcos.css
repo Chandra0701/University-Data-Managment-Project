@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:#f0f0f0;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input, button {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #0074a3;
+    color: #fff;
+    cursor: pointer;
+}

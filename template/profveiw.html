@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/prv.css">
+    <style>
+        body {
+            background: url('https://i.pinimg.com/originals/64/aa/0f/64aa0f7948f6f0fdea44af9b4b761e37.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+            color: royalblue;
+        }
+        button {
+            background-color: royalblue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin: 10px 0;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkblue;
+        }
+        #profile {
+            padding: 20px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+    <title>Profile View</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Profile</h1>
+        <button><a href="/">HOME</a></button>
+        <div id="profile">
+            <p><strong>Student ID:</strong> {{id}} <span id="userId"></span></p>
+            <p><strong>Name:</strong> {{name}} <span id="name"></span></p>
+            <p><strong>Email:</strong> {{email}} <span id="email"></span></p>
+            <p><strong>Department:</strong> {{dname}} <span id="department"></span></p>
+            <p><strong>Date of Birth:</strong> {{dob}} <span id="date"></span></p>
+            <button><a href="/gradesheet/{{id}}">View Grade Sheet</a></button>
+            <br>
+            <button><a href="/scholdept">Scholarships</a></button>
+            <br>
+            <button><a href="/addquery">Add Query</a></button>
+            <br>
+            <button><a href="/enroll">Enroll In a course</a></button>
+            <br>
+            <p><strong>Reply:</strong> <span id="reply"></span></p>
+        </div>
+    </div>
+    <script src="/static/prv.js"></script>
+</body>
+</html>

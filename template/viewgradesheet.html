@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Grade Sheet</title>
+    <link rel="icon" type="image/x-icon" href="https://st3.depositphotos.com/9543826/12593/v/950/depositphotos_125930754-stock-illustration-university-emblem-logo.jpg">
+    <link rel="stylesheet" href="/static/vgs.css">
+</head>
+<body>
+    <header>
+        <h1>University Grade Sheet</h1>
+        <button style="background-color:white"><a href="/">HOME</a></button>
+    </header>
+    <main>
+        <p><strong>student_ID:</strong> {{id}}<span id="userId"></span></p>
+        <p><strong>Name:</strong>{{name}} <span id="name"></span></p>
+        <section id="grade-list">
+           
+            <table>
+                <tr>
+                    <th>courseName</th>
+                    <th>Credit</th>
+                    <th>gradePoint</th>
+                </tr>
+               {%for s in s%}
+                <tr>
+                    {%for k in s%}
+                    <td>{{k}}</td>
+                    {%endfor%}
+                </tr>
+                {%endfor%}
+            </table>
+        </section>
+        <p><strong>totle grade point:</strong>{{sum}} <span id="totle grade point"></span></p>
+        <p><strong>CPI:</strong>{{tc}}<span id="CPI"></span></p>
+    </main>
+    <!--<script src="/static/vgs.js"></script>-->
+</body>
+</html>

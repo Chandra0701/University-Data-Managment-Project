@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>University Database - Admin Panel</title>
+    <link rel="icon" type="image/x-icon" href="https://st3.depositphotos.com/9543826/12593/v/950/depositphotos_125930754-stock-illustration-university-emblem-logo.jpg">
+    <link rel="stylesheet" href="/static/admin.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- University Logo and Navigation Menu -->
+        <div class="logo"><img src="/static/logo.png"></div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#students">Students</a></li>
+                <li><a href="#faculty">Faculty</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#reports">Reports</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Each section represents the different functionalities -->
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <!-- Display system overview and quick access links -->
+        </section>
+        <button><a href="/remove">Remove User</a></button>
+        <section id="students">
+            <h2>Students</h2>
+            <button><a href="/signup">Add Student</a></button>
+            <table>
+                <tr>
+                    <th>Sudent ID</th>
+                    <th>student Name</th>
+                    <th>date of birth</th>
+                    <th>Email</th>
+                    <th>adress</th>
+                    <th>phone_number</th>
+                </tr>
+               {%for p in s%}
+                <tr>
+                    {%for k in p%}
+                    <td>{{k}}</td>
+                    {%endfor%}
+                </tr>
+                {%endfor%}
+            </table>
+        </section>
+
+        <section id="faculty">
+            <h2>Faculty</h2>
+            <button><a href="/signup">Add Faculty</a></button>
+            <table>
+                <tr>
+                    <th>Faculty ID</th>
+                    <th>Faculty Name</th>
+                    <th>date of birth</th>
+                    <th>Email</th>
+                    <th>adress</th>
+                    <th>phone_number</th>
+                </tr>
+               {%for s in f%}
+                <tr>
+                    {%for k in s%}
+                    <td>{{k}}</td>
+                    {%endfor%}
+                </tr>
+                {%endfor%}
+            </table>
+        </section>
+
+        <section id="courses">
+            <h2>Courses</h2>
+            <button><a href="/adcos">Add course</a></button>
+            <table>
+                <tr>
+                    <th>course ID</th>
+                    <th>course code</th>
+                    <th>CourseName</th>
+                    <th>credit</th>
+                    <th>semester</th>
+                </tr>
+               {%for s in c%}
+                <tr>
+                    {%for k in s%}
+                    <td>{{k}}</td>
+                    {%endfor%}
+                </tr>
+                {%endfor%}
+            </table>
+        </section>
+
+        <section id="reports">
+            <h2>Reports</h2>
+            <!-- Generate different reports -->
+        </section>
+
+        <section id="settings">
+            <h2>Settings</h2>
+            <!-- Manage users, database, system configurations -->
+        </section>
+    </main>
+
+    <footer>
+        <!-- Copyright and Contact Information -->
+        <p>&copy; 2023 University Database Management System</p>
+        <p>Contact: admin@universitydbms.com</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

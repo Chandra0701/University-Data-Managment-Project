@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/prv.css">
+    <style>
+        body {
+            background-color: #3498db;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color:white;
+        }
+
+        button {
+            background-color: royalblue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin: 10px 0;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+
+        #profile {
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: royalblue;
+            color: white;
+        }
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 24px;
+            }
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+    <title>Profile View</title>
+    <link rel="icon" type="image/x-icon" href="https://st3.depositphotos.com/9543826/12593/v/950/depositphotos_125930754-stock-illustration-university-emblem-logo.jpg">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Your Profile</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/loginpage">Logout</a></li>
+                    <li><a href="/gradesheet/{{id}}">Gradesheet</a></li>
+                    <li><a href="/scholdept">Scholarships</a></li>
+                    <li><a href="/addquery">Addquery</a></li>
+                    <li><a href="/enroll/{{id}}">Enroll</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="profile">
+            <table>
+                <tr>
+                    <th>Field</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td><strong>Student ID</strong></td>
+                    <td><strong>{{id}}</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Name</strong></td>
+                    <td><strong>{{name}}</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Email</strong></td>
+                    <td><strong>{{email}}</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Department</strong></td>
+                    <td><strong>{{dname}}</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Date of Birth</strong></td>
+                    <td><strong>{{dob}}</strong></td>
+                </tr>
+            </table>
+            <p><strong>Reply:</strong>{{reply}} <span id="reply"></span></p>
+        </div>
+    </div>
+    <script src="/static/prv.js"></script>
+</body>
+
+</html>

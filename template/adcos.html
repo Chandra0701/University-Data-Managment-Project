@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add New Course</title>
+    <link rel="icon" type="image/x-icon" href="https://st3.depositphotos.com/9543826/12593/v/950/depositphotos_125930754-stock-illustration-university-emblem-logo.jpg">
+    <link rel="stylesheet" type="text/css" href="/static/adcos.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Add New Course</h1>
+    <form  method="post">
+        {%csrf_token%}
+        <div class="form-group">
+            <label for="course_code">Course id:</label>
+            <input type="text" id="id" name="id" required>
+        </div>
+        <div class="form-group">
+            <label for="course_code">Course Code:</label>
+            <input type="text" id="code" name="code" required>
+        </div>
+        <div class="form-group">
+            <label for="course_name">Course Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="credit_hours">Credit :</label>
+            <input type="number" id="credit" name="credit" required>
+        </div>
+        <div class="form-group">
+            <label for="credit_hours">Semester :</label>
+            <input type="number" id="sem" name="sem" required>
+        </div>
+        <div class="form-group">
+            <label for="credit_hours">DepartmentId :</label>
+            <input type="number" id="sem" name="did" required>
+        </div>
+        <div class="form-group">
+            <button type="submit">Add Course</button>
+        </div>
+    </form>
+    </div>
+   <!-- <script src="/static/adcos.js"></script>-->
+</body>
+</html>

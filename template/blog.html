@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width,initial-scale=1.0 ">
+    <title>university website</title>
+    <link rel="icon" type="image/x-icon" href="https://st3.depositphotos.com/9543826/12593/v/950/depositphotos_125930754-stock-illustration-university-emblem-logo.jpg">
+    <link rel="stylesheet" href="/static/ps.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/fontawesome.min.js"
+        integrity="sha512-64O4TSvYybbO2u06YzKDmZfLj/Tcr9+oorWhxzE3yDnmBRf7wvDgQweCzUf5pm2xYTgHMMyk5tW8kWU92JENng=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+
+
+    <section class="sub-header">
+
+
+        <nav>
+
+            <a href="/"><img src="/static/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">course</a></li>
+                    <li><a href="/contact">contact</a></li>
+                    <li><a href="/blog">BLOG</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our certificate & Online Programs For 2023</h1>
+    </section>
+    <!---blog-->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg">
+                <h2>Our certificate & Online Programs For 2023</h2>
+                <p>Generally, it is the responsibility of your college or university to send your degree certificates,
+                    but at times we may need it a little early. Even before you receive your degree certificate, you may
+                    get a job, and they might ask you for the certificates. In this article, we have provided a few
+                    samples of application for degree certificate that might help you write an application.<br>It is
+                    essential to be sure of the format of writing an application for a degree certificate. In order to
+                    write an application, you will have to know the address of the receiver, and most importantly, you
+                    have to mention your address.</p>
+                <br>
+                <p>As the world advances, there is a need for students to embrace university education. Parents and
+                    teachers need to motivate their children on the importance of a university degree. Many students
+                    work hard to attain their goals in certain professions when they receive motivation to keep pressing
+                    on. There are various motivators to students achieving their targets in life and having a university
+                    degree essay. Parents should ensure that their children get fired up for their academic life. The
+                    prime purpose of university education is the provision of knowledge and skills required for the job
+                    market</p>
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea row="5" placeholder="Your comment"></textarea>
+                        <button type="Submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post categories</h3>
+                <div>
+                    <span>Math</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Machine learning</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>34</span>
+                </div>
+                <div>
+                    <span>Biology</span>
+                    <span>29</span>
+                </div>
+                <div>
+                    <span>Arch</span>
+                    <span>72</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>
+            University is full of opportunities, but sometimes it can be hard to know which way to look first <br> or at
+            least know where you’re headed especially when your peers<br> seem to know what they’re doing.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twiter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o">Easy Tutorials</i></p>
+
+    </section>
+
+    <!------javascript ---->
+    <script>
+        var navLinks = documents.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right - "0";
+        }
+        function hideMenu() {
+            navLinks.style.right - "-200";
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculties of MKGandhi</title>
+    <link rel="icon" type="image/x-icon" href="https://st3.depositphotos.com/9543826/12593/v/950/depositphotos_125930754-stock-illustration-university-emblem-logo.jpg">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        section#courses {
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #3498db;
+            font-size: 24px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1e90ff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Faculties of MKGandhi</h1>
+    </header>
+    <a href="/" style="text-decoration: none;"><button>HOME</button></a>
+    <section id="courses">
+        <h2>Current Faculties </h2>
+        <table>
+            <tr>
+                <th>Faculty ID</th>
+                <th>Faculty Name</th>
+                <th>Email</th>
+            </tr>
+           {%for s in w%}
+            <tr>
+                {%for k in s%}
+                <td>{{k}}</td>
+                {%endfor%}
+            </tr>
+            {%endfor%}
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 University Name</p>
+    </footer>
+</body>
+</html>
